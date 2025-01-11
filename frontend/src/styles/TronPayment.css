@@ -1,0 +1,59 @@
+.subscription-plans {
+    margin-top: 2rem;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.plan-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card.selected {
+    border-color: #1890ff;
+    background-color: #e6f7ff;
+}
+
+.plan-card h4 {
+    margin: 0 0 1rem;
+    color: #1890ff;
+}
+
+button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #40a9ff;
+}
+
+.error {
+    color: #ff4d4f;
+    margin-top: 1rem;
+} 
